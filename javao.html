@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="view port" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="javao.css">
+  <title>100% Amor</title>
+</head>
+<body>
+  <div id="container">
+    <div>
+      <h1 class="title">Calculadora do Amor</h1>
+    </div>
+    <div>
+      <form class="nomes" id="nomes">
+          <label for="nome1">
+          <p>Qual é o primeiro nome?</p>
+          <p>
+            <input type="string" placeholder="Mariana" name="nome1" id="nome1" class="formInput" required> <!---Required abre aviso de campo a ser preenchido-->
+          </p>
+          </label>
+
+          <label for="nome2"> <!--- label é formulário-->
+            <p>E a segunda pessoa?</p>
+          </label>
+          <p>
+            <input type="string" placeholder="José" name="nome2" id="nome2" class="formInput" required><!--input number faz as setas de aumentar diminuir aparecer no site-->
+          </p>
+          <button type="submit" class="formSubmit">Calcular % de Amor</button>
+        
+      </form>
+    </div>
+    <div id="amorTotal">
+       Vocês se amam
+       <span id="total">0</span>%
+       <span id="trouxa">Rafaela não é mais trouxa! </span>
+       <span id="mariana">Mariana vai beijar a Thatha! </span>
+    </div>
+  </div>
+  <script type="text/javascript" src="javao.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+:root{ /*:root cria variaveis globais para alteração de cor --cor-tal */
+    --primary-color: rgb(255, 158, 200);
+    --secondary-color: rgb(233, 246, 54);
+    --tertiary-color: rgba(255, 0, 115, 0.688);
+  }
+  
+  body{
+    background: var(--primary-color);
+    font-size: 15px;
+    font-weight:600;
+    font-family:cursive;
+  }
+  
+  #container { /*o que tem # referem-se a ids, neste caso esta com a div para fazzer uma caixa e englobar tudo*/
+    height: 440px;
+    width: 360px;
+    margin: 100px auto;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(205, 48, 132);
+    border-radius: 10px;
+  }
+  
+  .title{
+    background:var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: Tahoma;
+    font-size: 18px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align:center;
+  }
+  
+  .nomes { /*o . é para selecionar todos os elementos dessa classe*/
+    padding-left: 25px;
+    text-transform: uppercase;
+  }
+  
+  .formInput {
+    background-color: white;
+    padding: 8px 8px 6px 6px;
+    width: 150px;
+    text-transform: uppercase;
+  }
+  
+  .formInput:focus { /*:focus, qnd a caixa é selecionada o foco vai pra ela e ela muda de cor*/
+    border: 3px solid var(--primary-color);
+    outline: none; 
+    text-transform: uppercase;
+  }
+  
+  .formSelect {
+    width: 180px;
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .formSelect:focus {
+    border: 3px solid var(--primary-color);
+    outline: none; 
+  }
+  
+  .formSubmit{
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: var(--primary-color);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+  }
+
+  #amorTotal {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+  }
